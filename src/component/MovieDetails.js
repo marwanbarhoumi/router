@@ -15,6 +15,14 @@ export const MovieDetails = ({list}) => {
       <Card.Text>
        {movie.description}
       </Card.Text>
+      <Card.Text>
+     <iframe
+  width="100%"
+  height="100%"
+  src={movie.trailer}
+  title="Trailer"
+></iframe>
+     </Card.Text>
       <Link to={'/'}>
       <button variant="primary">Retour</button>
       </Link>
